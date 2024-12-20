@@ -1,0 +1,752 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sanele Website</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@500&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" rel="stylesheet">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-icons/1.10.5/font/bootstrap-icons.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <header class="header">
+        <nav class="navbar">
+            <div class="menu-left">
+                <div class="logo">
+                    <h2>Sanele Nkosi</h2>
+                </div>
+            </div>
+            <div class="menu-right">
+                <ul class="menu-li">
+                    <li>
+                        <a href="#" class="menu-link">Home</a>
+                    </li>
+                    <li>
+                        <a href="#about-me" class="menu-link">About Me</a>
+                    </li>
+                    <li>
+                        <a href="#education" class="menu-link">Education</a>
+                    </li>
+                    <li>
+                        <a href="#skills" class="menu-link">Skills</a>
+                    </li>
+                    <li>
+                        <a href="#project" class="menu-link">Projects</a>
+                    </li>
+                    <li>
+                        <a href="#contact" class="menu-link btn-link sm-hidden">Contact Me</a>
+                    </li>
+                </ul>                
+                <button onclick="toggleMenu()" class="btn-menubar lg-hidden">
+                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512">
+                        <path
+                            d="M0 96C0 78.3 14.3 64 32 64H416c17.7 0 32 14.3 32 32s-14.3 32-32 32H32C14.3 128 0 113.7 0 96zM0 256c0-17.7 14.3-32 32-32H416c17.7 0 32 14.3 32 32s-14.3 32-32 32H32c-17.7 0-32-14.3-32-32zM448 416c0 17.7-14.3 32-32 32H32c-17.7 0-32-14.3-32-32s14.3-32 32-32H416c17.7 0 32 14.3 32 32z" />
+                    </svg>
+                </button>
+            </div>
+        </nav>
+        <div class="text-box">
+            <div class="text-content">                
+                <h1>Transforming Vision into Reality</h1>
+                <p>Passion for technology and a diverse skill set in software development and IT support</p>
+                <!--<button class="btn-link">Contact Me</button-->
+            </div>
+        </div>
+    </header>
+    
+    <script>
+        function toggleMenu() {
+            const menu_box = document.querySelector(".menu-li");
+            const navbar = document.querySelector(".navbar");
+            navbar.classList.toggle('active');
+            menu_box.classList.toggle('active');
+        }
+    </script>
+    <section id="about-me" class="about-me-section">
+        <div class="container my-5">
+            <h2 class="text-center mb-4 section-title">About Me</h2>
+            <div class="row gy-4">
+              <!-- First Row -->
+              <div class="col-md-6">
+                <div class="about-card p-4">
+                  <div class="icon-container mb-3">
+                    <i class="bi bi-lightning-charge-fill"></i>
+                  </div>
+                  <h3 class="text-uppercase">Ambitious</h3>
+                  <p>My ambition shines through the diverse projects I’ve undertaken, such as developing the Kulweb Tech website from scratch and creating a standout modern, professional design. I am also committed to continuous learning, proactively exploring opportunities in emerging fields like AI and machine learning.</p>
+                </div>
+              </div>
+              <div class="col-md-6">
+                <div class="about-card p-4">
+                  <div class="icon-container mb-3">
+                    <i class="bi bi-gear-fill"></i>
+                  </div>
+                  <h3 class="text-uppercase">Self-Starter</h3>
+                  <p>I take pride in initiating and managing my own projects, such as the "Taxi Rank Web App" and various personal software engineering endeavors. I am proactive in seeking out learning opportunities, continuously improving my skills without waiting for external prompts or direction.</p>
+                </div>
+              </div>
+        
+              <!-- Second Row -->
+              <div class="col-md-4">
+                <div class="about-card p-4">
+                  <div class="icon-container mb-3">
+                    <i class="bi bi-emoji-smile-fill"></i>
+                  </div>
+                  <h3 class="text-uppercase">Enthusiastic</h3>
+                  <p>My passion for technology and problem-solving drives me to excel in every task, from designing user-friendly websites to automating systems and optimizing infrastructures with advanced monitoring tools. I thrive on learning, applying new skills, and tackling challenges head-on.</p>
+                </div>
+              </div>
+              <div class="col-md-4">
+                <div class="about-card p-4">
+                  <div class="icon-container mb-3">
+                    <i class="bi bi-briefcase-fill"></i>
+                  </div>
+                  <h3 class="text-uppercase">Not Afraid of Responsibility</h3>
+                  <p>I pride myself on taking ownership of tasks and projects, excelling in both independent and collaborative environments. At BCX, I contributed to backend server operations, ensuring seamless performance and reliability. Additionally, I have taken the lead on technical initiatives, such as designing and developing admin panels and delivering end-to-end solutions by integrating frontend and backend systems with precision and creativity.</p>
+                </div>
+              </div>
+              <div class="col-md-4">
+                <div class="about-card p-4">
+                  <div class="icon-container mb-3">
+                    <i class="bi bi-tools"></i>
+                  </div>
+                  <h3 class="text-uppercase">Not Afraid to Get My Hands Dirty</h3>
+                  <p>I thrive on tackling challenges and immersing myself in hands-on technical work, from troubleshooting and optimizing Linux systems to scripting intricate workflows that streamline operations. As a software engineer and Linux administrator, I take pride in managing the full lifecycle of development projects, ensuring robust, scalable, and efficient solutions. My passion lies in exploring technical complexities and delivering practical, effective results that drive success.</p>
+                </div>
+              </div>
+            </div>
+          </div>
+      </section>
+
+      <section id="education" class="education-section py-5">
+        <div class="container">
+          <h2 class="text-center mb-5 section-title">Education Background</h2>
+          <div class="timeline">
+            <div class="timeline-item" data-aos="fade-right">
+              <div class="timeline-icon">
+                <i class="bi bi-mortarboard-fill"></i>
+              </div>
+              <div class="timeline-content">
+                <h4 class="timeline-title">National Diploma in Software Development</h4>
+                <p>Tshwane University of Technology</p>
+              </div>
+            </div>
+            <div class="timeline-item" data-aos="fade-left">
+              <div class="timeline-icon">
+                <i class="bi bi-pc-display"></i>
+              </div>
+              <div class="timeline-content">
+                <h4 class="timeline-title">IT Systems Support</h4>
+                <p>CTU Training Solutions</p>
+              </div>
+            </div>
+            <div class="timeline-item" data-aos="fade-right">
+              <div class="timeline-icon">
+                <i class="bi bi-tools"></i>
+              </div>
+              <div class="timeline-content">
+                <h4 class="timeline-title">IT Technical Support</h4>
+                <p>PTA Technical College</p>
+              </div>
+            </div>
+            <div class="timeline-item" data-aos="fade-right">
+                <div class="timeline-icon">
+                  <i class="bi bi-person-badge"></i>
+                </div>
+                <div class="timeline-content">
+                  <h4 class="timeline-title">Matric</h4>
+                  <p>Vukuzenzele Combined School</p>
+                </div>
+              </div>
+            </div>
+        </div>
+      </section>
+
+      <section id="certificates" class="certificates-section py-5">
+        <div class="container">
+          <h2 class="text-center mb-5 section-title">Certificates</h2>
+          <div class="row">
+            <!-- Certificate Card 1 -->
+            <div class="col-lg-4 col-md-6 mb-4">
+              <div class="certificate-card" data-aos="zoom-in">
+                <div class="certificate-icon">
+                  <i class="bi bi-terminal-fill"></i>
+                </div>
+                <h4 class="certificate-title">Certified Linux Administrator</h4>
+                <p class="certificate-issuer">SUSE</p>
+              </div>
+            </div>
+      
+            <!-- Certificate Card 2 -->
+            <div class="col-lg-4 col-md-6 mb-4">
+              <div class="certificate-card" data-aos="zoom-in">
+                <div class="certificate-icon">
+                  <i class="bi bi-terminal-fill"></i>
+                </div>
+                <h4 class="certificate-title">Certified Linux Engineer</h4>
+                <p class="certificate-issuer">SUSE</p>
+              </div>
+            </div>
+      
+            <!-- Certificate Card 3 -->
+            <div class="col-lg-4 col-md-6 mb-4">
+              <div class="certificate-card" data-aos="zoom-in">
+                <div class="certificate-icon">
+                  <i class="bi bi-file-earmark-text"></i>
+                </div>
+                <h4 class="certificate-title">Responsive Web Design</h4>
+                <p class="certificate-issuer">FreeCodeCamp</p>
+              </div>
+            </div>
+      
+            <!-- Certificate Card 4 -->
+            <div class="col-lg-4 col-md-6 mb-4">
+              <div class="certificate-card" data-aos="zoom-in">
+                <div class="certificate-icon">
+                  <i class="bi bi-code-slash"></i>
+                </div>
+                <h4 class="certificate-title">JavaScript Algorithms and Data Structures</h4>
+                <p class="certificate-issuer">FreeCodeCamp</p>
+              </div>
+            </div>
+      
+            <!-- Certificate Card 5 -->
+            <div class="col-lg-4 col-md-6 mb-4">
+              <div class="certificate-card" data-aos="zoom-in">
+                <div class="certificate-icon">
+                  <i class="bi bi-app"></i>
+                </div>
+                <h4 class="certificate-title">Front End Development Libraries</h4>
+                <p class="certificate-issuer">FreeCodeCamp</p>
+              </div>
+            </div>
+      
+            <!-- Certificate Card 6 -->
+            <div class="col-lg-4 col-md-6 mb-4">
+              <div class="certificate-card" data-aos="zoom-in">
+                <div class="certificate-icon">
+                  <i class="bi bi-bar-chart-line"></i>
+                </div>
+                <h4 class="certificate-title">Data Visualization</h4>
+                <p class="certificate-issuer">FreeCodeCamp</p>
+              </div>
+            </div>
+
+             <!-- Certificate Card 7 -->
+             <div class="col-lg-4 col-md-6 mb-4">
+                <div class="certificate-card" data-aos="zoom-in">
+                  <div class="certificate-icon">
+                    <i class="bi bi-cloud"></i>
+                  </div>
+                  <h4 class="certificate-title">Azure Course</h4>
+                  <p class="certificate-issuer">Great Learning</p>
+                </div>
+              </div>
+          </div>
+        </div>
+      </section>
+
+
+      <section id="skills" class="skills-section py-5">
+        <div class="container">
+            <h2 class="text-center mb-5 section-title">Skills</h2>
+            
+            <!-- Soft Skills -->
+            <h3 class="text-center mb-4">Soft Skills</h3>
+            <div class="row">
+                <div class="row">
+                    <!-- Team Building -->
+                    <div class="col-lg-4 col-md-6 mb-4">
+                        <div class="skill-card text-center" data-aos="fade-up">
+                            <div class="skill-icon">
+                                <i class="bi bi-people-fill" style="font-size: 40px;"></i>
+                            </div>
+                            <h4 class="skill-title">Team Building</h4>
+                        </div>
+                    </div>
+                
+                    <!-- Problem Solving -->
+                    <div class="col-lg-4 col-md-6 mb-4">
+                        <div class="skill-card text-center" data-aos="fade-up" data-aos-delay="100">
+                            <div class="skill-icon">
+                                <i class="bi bi-lightbulb-fill" style="font-size: 40px;"></i>
+                            </div>
+                            <h4 class="skill-title">Problem Solving</h4>
+                        </div>
+                    </div>
+                
+                    <!-- Decision Making -->
+                    <div class="col-lg-4 col-md-6 mb-4">
+                        <div class="skill-card text-center" data-aos="fade-up" data-aos-delay="200">
+                            <div class="skill-icon">
+                                <i class="bi bi-check-circle-fill" style="font-size: 40px;"></i>
+                            </div>
+                            <h4 class="skill-title">Decision Making</h4>
+                        </div>
+                    </div>
+                
+                    <!-- Object-Oriented Programming -->
+                    <div class="col-lg-4 col-md-6 mb-4">
+                        <div class="skill-card text-center" data-aos="fade-up" data-aos-delay="300">
+                            <div class="skill-icon">
+                                <i class="bi bi-code-slash" style="font-size: 40px;"></i>
+                            </div>
+                            <h4 class="skill-title">Object-Oriented Programming</h4>
+                        </div>
+                    </div>
+                
+                    <!-- Time Management -->
+                    <div class="col-lg-4 col-md-6 mb-4">
+                        <div class="skill-card text-center" data-aos="fade-up" data-aos-delay="400">
+                            <div class="skill-icon">
+                                <i class="bi bi-clock-fill" style="font-size: 40px;"></i>
+                            </div>
+                            <h4 class="skill-title">Time Management</h4>
+                        </div>
+                    </div>
+                
+                    <!-- Adaptability -->
+                    <div class="col-lg-4 col-md-6 mb-4">
+                        <div class="skill-card text-center" data-aos="fade-up" data-aos-delay="500">
+                            <div class="skill-icon">
+                                <i class="bi bi-arrow-repeat" style="font-size: 40px;"></i>
+                            </div>
+                            <h4 class="skill-title">Adaptability</h4>
+                        </div>
+                    </div>
+                
+                    <!-- Critical Thinking -->
+                    <div class="col-lg-4 col-md-6 mb-4">
+                        <div class="skill-card text-center" data-aos="fade-up" data-aos-delay="600">
+                            <div class="skill-icon">
+                                <i class="bi-lightning-charge" style="font-size: 40px;"></i>
+                            </div>
+                            <h4 class="skill-title">Critical Thinking</h4>
+                        </div>
+                    </div>
+                
+                    <!-- Integrity -->
+                    <div class="col-lg-4 col-md-6 mb-4">
+                        <div class="skill-card text-center" data-aos="fade-up" data-aos-delay="700">
+                            <div class="skill-icon">
+                                <i class="bi bi-shield-fill-check" style="font-size: 40px;"></i>
+                            </div>
+                            <h4 class="skill-title">Integrity</h4>
+                        </div>
+                    </div>
+                
+                    <!-- Flexibility -->
+                    <div class="col-lg-4 col-md-6 mb-4">
+                        <div class="skill-card text-center" data-aos="fade-up" data-aos-delay="800">
+                            <div class="skill-icon">
+                                <i class="bi bi-rulers" style="font-size: 40px;"></i>
+                            </div>
+                            <h4 class="skill-title">Flexibility</h4>
+                        </div>
+                    </div>
+                </div>
+                
+            </div>
+    
+            <!-- Tech Skills -->
+            <h3 class="text-center mb-4">Tech Skills</h3>
+            <div class="row">
+                <div class="col-lg-4 col-md-6 mb-4">
+                    <div class="skill-card text-center" data-aos="fade-up">
+                        <div class="skill-icon">
+                            <i class="bi bi-code-slash" style="font-size: 40px;"></i>
+                        </div>
+                        <h4 class="skill-title">HTML, CSS, JavaScript</h4>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6 mb-4">
+                    <div class="skill-card text-center" data-aos="fade-up" data-aos-delay="100">
+                        <div class="skill-icon">
+                            <i class="bi bi-code-slash" style="font-size: 40px;"></i>
+                        </div>
+                        <h4 class="skill-title">C++, Java, Python</h4>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6 mb-4">
+                    <div class="skill-card text-center" data-aos="fade-up" data-aos-delay="100">
+                        <div class="skill-icon">
+                            <i class="bi bi-code-slash" style="font-size: 40px;"></i>
+                        </div>
+                        <h4 class="skill-title">PHP, Node.js, Django, Laravel</h4>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6 mb-4">
+                    <div class="skill-card text-center" data-aos="fade-up" data-aos-delay="200">
+                        <div class="skill-icon">
+                            <i class="bi bi-database" style="font-size: 40px;"></i>
+                        </div>
+                        <h4 class="skill-title">MySQL, Oracle, PostgreSQL, Microsoft SQL Server, MongoDB</h4>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6 mb-4">
+                    <div class="skill-card text-center" data-aos="fade-up" data-aos-delay="300">
+                        <div class="skill-icon">
+                            <i class="bi bi-bootstrap" style="font-size: 40px;"></i>
+                        </div>
+                        <h4 class="skill-title">React, Bootstrap, jQuery, REST API</h4>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6 mb-4">
+                    <div class="skill-card text-center" data-aos="fade-up" data-aos-delay="400">
+                        <div class="skill-icon">
+                            <i class="bi bi-terminal" style="font-size: 40px;"></i>
+                        </div>
+                        <h4 class="skill-title">Scripting with Bash, Python</h4>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6 mb-4">
+                    <div class="skill-card text-center" data-aos="fade-up" data-aos-delay="1300">
+                        <div class="skill-icon">
+                            <i class="bi bi-cloud" style="font-size: 40px;"></i>
+                        </div>
+                        <h4 class="skill-title">Cloud Computing</h4>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6 mb-4">
+                    <div class="skill-card text-center" data-aos="fade-up" data-aos-delay="1200">
+                        <div class="skill-icon">
+                            <i class="bi bi-shield-lock" style="font-size: 40px;"></i>
+                        </div>
+                        <h4 class="skill-title">ITIL</h4>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6 mb-4">
+                    <div class="skill-card text-center" data-aos="fade-up" data-aos-delay="1100">
+                        <div class="skill-icon">
+                            <i class="bi bi-gear" style="font-size: 40px;"></i>
+                        </div>
+                        <h4 class="skill-title">Machine Learning</h4>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6 mb-4">
+                    <div class="skill-card text-center" data-aos="fade-up" data-aos-delay="400">
+                        <div class="skill-icon">
+                            <i class="bi bi-code-slash" style="font-size: 40px;"></i>
+                        </div>
+                        <h4 class="skill-title">Software Development</h4>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6 mb-4">
+                    <div class="skill-card text-center" data-aos="fade-up" data-aos-delay="500">
+                        <div class="skill-icon">
+                            <i class="bi bi-phone" style="font-size: 40px;"></i>
+                        </div>
+                        <h4 class="skill-title">Mobile Development</h4>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6 mb-4">
+                    <div class="skill-card text-center" data-aos="fade-up" data-aos-delay="600">
+                        <div class="skill-icon">
+                            <i class="bi bi-bar-chart-line" style="font-size: 40px;"></i>
+                        </div>
+                        <h4 class="skill-title">Business Analysis and Modelling</h4>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6 mb-4">
+                    <div class="skill-card text-center" data-aos="fade-up" data-aos-delay="700">
+                        <div class="skill-icon">
+                            <i class="bi bi-journal-check" style="font-size: 40px;"></i>
+                        </div>
+                        <h4 class="skill-title">Software Testing</h4>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6 mb-4">
+                    <div class="skill-card text-center" data-aos="fade-up" data-aos-delay="800">
+                        <div class="skill-icon">
+                            <i class="bi bi-database" style="font-size: 40px;"></i>
+                        </div>
+                        <h4 class="skill-title">Database Development and Administration</h4>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6 mb-4">
+                    <div class="skill-card text-center" data-aos="fade-up" data-aos-delay="900">
+                        <div class="skill-icon">
+                            <i class="bi bi-pie-chart" style="font-size: 40px;"></i>
+                        </div>
+                        <h4 class="skill-title">Data Analysis and Data Administration</h4>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6 mb-4">
+                    <div class="skill-card text-center" data-aos="fade-up" data-aos-delay="200">
+                        <div class="skill-icon">
+                            <i class="bi bi-tools" style="font-size: 40px;"></i>
+                        </div>
+                        <h4 class="skill-title">Systems Support</h4>
+                    </div>
+                </div>
+            </div>
+    
+            <!-- Linux Distribution Software -->
+            <h3 class="text-center mb-4">Linux Distribution Software</h3>
+            <div class="row">
+                <!-- Ubuntu -->
+                <div class="col-lg-4 col-md-6 mb-4">
+                    <div class="skill-card text-center" data-aos="fade-up">
+                        <div class="skill-icon">
+                            <i class="fab fa-ubuntu" style="font-size: 40px;"></i>
+                        </div>
+                        <h4 class="skill-title">Ubuntu</h4>
+                    </div>
+                </div>
+            
+                <!-- SUSE Linux -->
+                <div class="col-lg-4 col-md-6 mb-4">
+                    <div class="skill-card text-center" data-aos="fade-up" data-aos-delay="100">
+                        <div class="skill-icon">
+                            <i class="fas fa-server" style="font-size: 40px;"></i>
+                        </div>
+                        <h4 class="skill-title">SUSE Linux</h4>
+                    </div>
+                </div>
+            
+                <!-- Redhat -->
+                <div class="col-lg-4 col-md-6 mb-4">
+                    <div class="skill-card text-center" data-aos="fade-up" data-aos-delay="200">
+                        <div class="skill-icon">
+                            <i class="fas fa-hat-wizard" style="font-size: 40px;"></i>
+                        </div>
+                        <h4 class="skill-title">Redhat</h4>
+                    </div>
+                </div>
+            </div>
+            
+    
+            <!-- Monitoring Tools -->
+            <h3 class="text-center mb-4">Monitoring Tools</h3>
+            <div class="row">
+                <div class="col-lg-4 col-md-6 mb-4">
+                    <div class="skill-card text-center" data-aos="fade-up">
+                        <div class="skill-icon">
+                            <i class="bi bi-sliders" style="font-size: 40px;"></i>
+                        </div>
+                        <h4 class="skill-title">Zabbix</h4>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6 mb-4">
+                    <div class="skill-card text-center" data-aos="fade-up" data-aos-delay="100">
+                        <div class="skill-icon">
+                            <i class="bi bi-sliders" style="font-size: 40px;"></i>
+                        </div>
+                        <h4 class="skill-title">Grafana</h4>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6 mb-4">
+                    <div class="skill-card text-center" data-aos="fade-up" data-aos-delay="200">
+                        <div class="skill-icon">
+                            <i class="bi bi-sliders" style="font-size: 40px;"></i>
+                        </div>
+                        <h4 class="skill-title">Prometheus</h4>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+<!-- Projects Section -->
+<section id="project" class="project-section py-5">
+<h3 class="text-center mb-4 mt-5">Projects</h3>
+<div class="row">
+    <!-- Portfolio Section -->
+    <div class="col-lg-4 col-md-6 mb-4">
+        <div class="project-card text-center p-4" data-aos="fade-up" data-aos-duration="1000" class="card-hover" style="border-radius: 10px; box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1); background: #f7f7f7; transition: transform 0.3s ease;">
+            <div class="project-icon mb-3" style="font-size: 50px; color: #2b79ff; transition: transform 0.3s;">
+                <i class="bi bi-person-square"></i>
+            </div>
+            <h4 class="project-title text-primary" style="transition: transform 0.3s;">My Portfolio</h4>
+            <p class="project-description mb-3">Showcasing my work and technical skills with a clean, modern design.</p>
+            <a href="https://sanele2017.github.io/mywebsite/" target="_blank" class="btn btn-primary btn-lg mb-3">Visit Portfolio</a>
+
+        </div>
+    </div>
+
+    <!-- Kulweb Technologies Section -->
+    <div class="col-lg-4 col-md-6 mb-4">
+        <div class="project-card text-center p-4" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="100" class="card-hover" style="border-radius: 10px; box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1); background: #f7f7f7; transition: transform 0.3s ease;">
+            <div class="project-icon mb-3" style="font-size: 50px; color: #34bfa3; transition: transform 0.3s;">
+                <i class="bi bi-house-door"></i>
+            </div>
+            <h4 class="project-title text-success" style="transition: transform 0.3s;">Kulweb Technologies</h4>
+            <p class="project-description mb-3">Built from scratch using HTML, CSS, JavaScript, and Bootstrap. Ready for launch!</p>
+            <p><strong>Contact Person:</strong> <a href="mailto:BoitumeloD@kulwebtech.com" class="text-info">BoitumeloD@kulwebtech.com</a></p>
+        </div>
+    </div>
+
+    <!-- Find a Taxi Rank Section -->
+    <div class="col-lg-4 col-md-6 mb-4">
+        <div class="project-card text-center p-4" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="200" class="card-hover" style="border-radius: 10px; box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1); background: #f7f7f7; transition: transform 0.3s ease;">
+            <div class="project-icon mb-3" style="font-size: 50px; color: #ff6f61; transition: transform 0.3s;">
+                <i class="bi bi-car-front"></i>
+            </div>
+            <h4 class="project-title text-danger" style="transition: transform 0.3s;">Find a Taxi Rank</h4>
+            <p class="project-description mb-3">A personal project to locate taxi ranks, compare fares, and improve user commute experiences.</p>
+            <p><strong>Technologies:</strong> HTML, CSS, JavaScript, Bootstrap, PHP, MySQL</p>
+            <p><strong>Status:</strong> In Progress</p>
+        </div>
+    </div>
+</div>
+
+<!-- CSS for Added Animations -->
+<style>
+    .card-hover:hover {
+        transform: translateY(-10px) scale(1.05); /* Slightly lifts and enlarges the card */
+        box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2); /* Stronger shadow on hover */
+    }
+
+    .card-hover:hover .project-icon {
+        transform: rotate(15deg); /* Icon rotation effect */
+    }
+
+    .card-hover:hover .project-title {
+        transform: translateY(-5px); /* Moves the title slightly upwards */
+    }
+
+    .project-icon:hover {
+        transform: scale(1.2); /* Icon scale-up effect */
+    }
+
+    .project-title:hover {
+        color: #ff6f61; /* Changes the title color on hover */
+        cursor: pointer;
+    }
+</style>
+</section>
+
+<!-- Contact Us Section -->
+<section id="contact" class="mt-5 pt-5">
+    <div class="container">
+        <h3 class="text-center mb-4">Contact Us</h3>
+        <div class="row">
+            <!-- Contact Information -->
+            <div class="col-md-6">
+                <div class="contact-info">
+                    <h4>Contact Details</h4>
+                    <ul class="list-unstyled">
+                        <li><i class="bi bi-telephone-fill"></i> <strong>Phone:</strong> 076 958 2204</li>
+                        <li><i class="bi bi-envelope-fill"></i> <strong>Email:</strong> Imanathi17@gmail.com</li>
+                        <li><i class="bi bi-geo-alt-fill"></i> <strong>Address:</strong> 1995 Knife Jaw Street, Kaalfontein, Midrand, 1632</li>
+                        <li><i class="bi bi-facebook"></i> <strong>Facebook:</strong> <a href="#" class="text-decoration-none"> Sanele Lindokuhle</a></li>
+                        <li><i class="bi bi-linkedin"></i> <strong>LinkedIn:</strong> <a href="https://www.linkedin.com/in/sanele-nkosi-b52706243" class="text-decoration-none"> Sanele-Nkosi</a></li>
+                    </ul>
+                </div>
+            </div>
+
+            <!-- Google Map -->
+            <div class="col-md-6">
+                <div class="map-responsive">
+                    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3450.9176793395695!2d28.1797288!3d-25.9896989!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x1e956e98e0ff3847%3A0xbb5219b30faee050!2s1995%20Knife%20Jaw%20St%2C%20Kaalfontein%2C%20Midrand%2C%201632!5e1!3m2!1sen!2sza!4v1734686294172!5m2!1sen!2sza" width="100%" height="300" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- CSS Styling -->
+<style>
+    #contact {
+        background-color: #f9f9f9;
+        padding: 50px 0;
+    }
+
+    .contact-info h4 {
+        color: black;
+        font-weight: 600;
+        margin-bottom: 20px;
+    }
+
+    .contact-info ul {
+        list-style: none;
+        padding-left: 0;
+    }
+
+    .contact-info ul li {
+        font-size: 18px;
+        margin-bottom: 15px;
+    }
+
+    .contact-info ul li i {
+        color: black;
+        margin-right: 10px;
+        font-size: 20px;
+    }
+
+    .map-responsive {
+        overflow: hidden;
+        padding-bottom: 56.25%; /* 16:9 aspect ratio */
+        position: relative;
+        height: 0;
+    }
+
+    .map-responsive iframe {
+        border: 0;
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+    }
+</style>
+    
+<!-- Footer Section -->
+<footer class="footer bg-dark text-white mt-5 pt-5 pb-3">
+    <div class="container text-center">
+        <!-- Footer Content -->
+        <div class="row">
+            <div class="col-md-6">
+                <p>&copy; 2024 Sanele-Nkosi. All rights reserved.</p>
+            </div>
+            <div class="col-md-6">
+                <ul class="list-inline">
+                    <li class="list-inline-item">
+                        <a href="https://www.linkedin.com/in/sanele-nkosi-b52706243" target="_blank" class="text-white">
+                            <i class="bi bi-linkedin" style="font-size: 24px;"></i>
+                        </a>
+                    </li>
+                    <li class="list-inline-item">
+                        <a href="https://github.com/Sanele2017" target="_blank" class="text-white">
+                            <i class="bi bi-github" style="font-size: 24px;"></i>
+                        </a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+
+        <!-- Back to Top Button -->
+        <a href="#top" class="back-to-top text-white">
+            <i class="bi bi-arrow-up-circle" style="font-size: 36px;"></i>
+        </a>
+    </div>
+</footer>
+
+      <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/js/bootstrap.bundle.min.js"></script>  
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.js"></script>
+<script>
+  AOS.init({
+    duration: 1200,
+    once: true,
+  });
+</script>
+<script>
+    /* Show the back-to-top button when scrolled down */
+window.onscroll = function() {
+    let backToTopButton = document.querySelector('.back-to-top');
+    if (document.body.scrollTop > 100 || document.documentElement.scrollTop > 100) {
+        backToTopButton.style.display = "block";
+    } else {
+        backToTopButton.style.display = "none";
+    }
+};
+</script>
+
+</body>
+</html>
